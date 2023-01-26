@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"    />
+    <link  href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container flex  justify-center items-center h-screen  w-full  " id="log" style="background-image:url(/images//home.jpg);">
+        <div class=" main flex flex-row rounded    m-2">
+          <div class="img w-2/3 bg-purple-400 rounded-l-md ">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp" alt="">
+          </div>
+          <div class="form w-1/2  rounded-r-md  px-10 flex flex-col items-center justify-center " style="background: url(Group\ 30.svg); background-color: blueviolet;">
+            <div class=" mt-10 ">
+              <img src="https://mdbcdn.b-cdn.net/img/new/avatars/5.webp" class="rounded-lg w-32" alt="Avatar" />
+            </div>
+
+              <div class=" flex flex-col w-full   items-center mt-3 gap-4 ">
+                 <form action="/" method="post" > 
+                   <input name="email" type="email" id="email" class="  form-control block  px-4 py-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-black rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:outline-none focus:border-black" placeholder="email" value="<%=setEmail%>" autocomplete="on" required>
+                   <input name="password" type="password" id="contact" class=" form-control block  px-4 py-2 text-md font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-black rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:outline-none focus:border-black"  placeholder="Password" required >
+                   <button type="submit" name="btn"id="login" value="login" class="login  btn btn-primary mt-2 text-xl  font-semibold" >Submit</button>
+                  </form>
+              
+                  <a class="link link-warning">Forget Password</a>
+                  <div class=" flex  space-x-3 items-center   h-20 ">
+                    <span class="text-white text-xl">Don't have an  account ? </span>
+                    <form action="/" method="post">
+                      <button class="btn btn-accent w-24 h-10" name="btn" value="singUp" type="submit">Sign Up</button>
+                    </form>                                          
+                  </div>
+              </div>
+              <div class="head flex flex-col space-x-3 space-y-3 my-3  h-14 ">
+                <div class="social flex flex-row  space-x-4 ">  
+                  <button class="btn btn-primary w-14 h-14 text-xl rounded-full font-serif font-semibold">
+                    <img src="/images/facebook.svg" alt="">
+                  </button>
+                  <button class="btn btn-primary w-14 h-14 text-xl rounded-full font-serif font-semibold">
+                    <img src="/images/twitter.svg" alt="">
+                  </button>
+                  <button class="btn btn-primary w-14 h-14 text-xl rounded-full font-serif font-semibold">
+                    <img src="/images/instagram.svg" alt="">
+                  </button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </body>
+    <!-- <script src="../javaScript/login.js"></script> -->
+</html>

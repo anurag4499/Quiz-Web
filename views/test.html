@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"    />
+    <link  href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/owl.carousel.css" />
+    <link rel="stylesheet" href="css/owl.theme.green.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+      </script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/owl.carousel.min.js"></script>
+  </head>
+<body>
+  <nav class="
+  relative
+  w-full
+  flex flex-wrap
+  items-center
+  justify-between
+  py-4
+  bg-gray-100
+  text-gray-500
+  hover:text-gray-700
+  focus:text-gray-700
+  shadow-lg
+  navbar navbar-expand-lg navbar-light
+  ">
+  <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+  <button class="
+      navbar-toggler
+      text-gray-500
+      border-0
+      hover:shadow-none hover:no-underline
+      py-2
+      px-2.5
+      bg-transparent
+      focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline
+    " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
+    class="w-6" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+    <path fill="currentColor"
+      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z">
+    </path>
+  </svg>
+  </button>
+  <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+  <a class="
+        flex
+        items-center
+        text-gray-900
+        hover:text-gray-900
+        focus:text-gray-900
+        mt-2
+        lg:mt-0
+        mr-1
+      " href="#">
+      <h1 class=" text-2xl font-bold fontserif text-purple-600">MHT-CET</h1> 
+
+  </div>
+ 
+  </div>
+  
+  </div>
+</nav>
+
+    <!-- Container for demo purpose -->
+<div class="container  px-6 mx-auto bg-white  ">
+    <section class=" text-gray-800  text-center md:text-left">
+      <div class="flex flex-wrap py-5 ">
+        <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+          <div
+            class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+            data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+              class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+        <div class="grow-0 shrink-0 basis-auto   w-full md:w-9/12 xl:w-7/12 px-3 bg-slate-100  rounded-2xl md:mb-0 mr-auto">
+          <h5 class="text-2xl font-serif font-bold  my-5">Aptitude Test</h5>
+          <p class="text-gray-500 ">
+            This test may conduct max 100 question no negative marking for duration of 20 min.
+          </p>
+          <div class="flex space-x-2 justify-center md:justify-start my-4">
+              <form action="/test" method="post">
+                <button name="test" value="test1" type="submit" class="inline-block w-40 h-12 px-7 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Start Test</button>
+              </form>
+       
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap py-5 ">
+        <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+          <div
+            class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+            data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="https://mdbootstrap.com/img/new/standard/city/018.jpg"
+              class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+        <div class="grow-0 shrink-0 basis-auto   w-full md:w-9/12 xl:w-7/12 px-3 bg-slate-100  rounded-2xl md:mb-0 mr-auto">
+          <h5 class="text-2xl font-serif font-bold  my-5">Technical Test</h5>
+          <p class="text-gray-500 ">
+            This test may conduct max 100 question no negative marking for duration of 20 min.
+          </p>
+          <div class="flex space-x-2 justify-center md:justify-start my-4">
+            <form action="/test" method="post">
+                <button name="test" value="test2" type="submit" class="inline-block w-40 h-12 px-7 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Start Test</button>
+            </form>
+          </div>
+        </div>
+      </div>
+  
+   <div class="flex flex-wrap mb-6 ">
+        <div class="grow-0 shrink-0 basis-auto w-full md:w-3/12 px-3 mb-6 md:mb-0 ml-auto">
+          <div
+            class="relative overflow-hidden bg-no-repeat bg-cover relative overflow-hidden bg-no-repeat bg-cover ripple shadow-lg rounded-lg mb-6"
+            data-mdb-ripple="true" data-mdb-ripple-color="light">
+            <img src="https://mdbootstrap.com/img/new/standard/city/059.jpg"
+              class="w-full" alt="Louvre" />
+            <a href="#!">
+              <div class="absolute top-0 right-0 bottom-0 left-0 w-full h-full overflow-hidden bg-fixed opacity-0 hover:opacity-100 transition duration-300 ease-in-out"
+                style="background-color: rgba(251, 251, 251, 0.2)"></div>
+            </a>
+          </div>
+        </div>
+  
+        <div class="grow-0 shrink-0 basis-auto   w-full md:w-9/12 xl:w-7/12 px-3 bg-slate-100  rounded-2xl md:mb-0 mr-auto">
+          <h5 class="text-2xl font-serif font-bold  my-5">Coding Decoding Test</h5>
+          <p class="text-gray-500 ">
+            This test may conduct max 100 question no negative marking for duration of 20 min.
+          </p>
+          <div class="flex space-x-2 justify-center md:justify-start my-4">
+            <form action="/test" method="post">
+              <button name="test" value="test3" type="submit" class="inline-block w-40 h-12 px-7 py-2.5 bg-blue-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:bg-blue-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-blue-800 active:shadow-lg transition duration-150 ease-in-out">Start Test</button>
+            </form>
+          </div>
+        </div>
+      </div>
+   </section>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/dist/js/index.min.js"></script>    
+</body>
+</html>

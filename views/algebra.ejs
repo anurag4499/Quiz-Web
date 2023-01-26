@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link   rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"  />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/dist/css/index.min.css"    />
+    <link  href="https://cdn.jsdelivr.net/npm/daisyui@2.46.0/dist/full.css" rel="stylesheet" type="text/css"/>
+    <!-- <link rel="stylesheet" href="css/animate.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+      </script>
+
+      </head>
+      <body>
+        <div class="container-fluid flex flex-col ">
+            <div class="head flex h-20 flex-row justify-between w-full bg-white items-center px-20 ">
+              <div class="title text-black text-2xl ">MHT-CET</div>
+                  <div class="information flex fle-row space-x-2 items-center"> 
+                     <div class="">
+                    <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="rounded-full w-14  mx-auto "  alt="Avatar"/>
+                    </div>
+                     <div>
+                       <h5 class="text-xl font-medium leading-tight mb-2 text-gray-800"><%=Username%></h5>
+                       <p class="text-gray-500">Web designer</p>
+                     </div>
+                   </div>
+                 </div>
+            </div>
+            <div class="bottom bg-slate-300  flex ">
+                <div class="left w-2/3 bg-red-50 p-10">
+                  <div class="question h-52 bg-red-300 rounded-t-lg shadow-lg flex p-5 ">
+                     <h1 id="question" class=" text-xl text-black">Q Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat magnam odio, quas rerum saepe officia aut nam iure! Veritatis ut, doloremque repellat suscipit ab nemo ipsa voluptatibus aspernatur ad quam aperiam id culpa molestiae, at tenetur sit! Voluptatum quasi earum unde, perspiciatis harum consequuntur.</h1>
+                  </div>
+                   <div class="option  h-60 bg-red-300  rounded-b-lg p-5">
+                    <div class="op flex flex-col gap-3">
+                         <div class="op">
+                          <input id="radio0"  class=" radio form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label id="option0" class=" form-check-label inline-block text-gray-800 text-xl text-black" for="flexRadioDefault1">
+                            Default radio
+                          </label>
+                         </div>
+                         <div class="op">
+                          <input id="radio1"  class="radio form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label id="option1" class=" form-check-label inline-block text-gray-800 text-xl text-black" for="flexRadioDefault1">
+                            ccsdbfbsijfbsdjbjsddjbjsddbvbdsi
+                          </label>
+                         </div>
+                         <div class="op">
+                          <input id="radio2"  class="radio form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label id="option2" class="  form-check-label inline-block text-gray-800 text-xl text-black" for="flexRadioDefault1">
+                            jndsjcnsoncjsndjnsdc
+                          </label>
+                         </div>
+                         <div class="op">
+                          <input id="radio3"  class="radio form-check-input appearance-none rounded-full h-4 w-4 border border-gray-300 bg-white checked:bg-blue-600 checked:border-blue-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          <label id="option3" class=" form-check-label inline-block text-gray-800 text-xl text-black" for="flexRadioDefault1">
+                            wdfcnjdasjndsjbhibibe
+                          </label>
+                         </div>
+                    </div>
+                  </div>
+                  <div class="b0t-btn h-32 flex justify-center items-center space-x-4"> 
+                    <button type="button" id="prev" class=" inline-block w-40 h-12 px-7 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md  hover:shadow-lg  focus:bg-red-800">Pevious</button>
+                    <button type="button" id="next"  class="inline-block w-40 h-12 px-7 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg  focus:bg-red-800">Next</button> 
+                  </div>
+                </div>
+                <div class="right w-1/3">
+                  <div class="time  flex flex-row bg-red-50 ">
+                     <div class=" w-1/3">
+                      <img src="/images/timer.png" alt="" class="  w-24">
+                     </div>
+                     <div class="sec w-2/3 text-6xl flex items-center  justify-center">
+                        <span id="minute">20</span>:<span id="secound">00</span>
+                     </div>
+                  </div>
+                  <div class="num-q">
+                    <div class="head text-center bg-red-200 text-3xl text-black">Questions</div>
+                    <div class="q w-full bg-red-200">
+                      <table class="justify-center flex ">
+                          <tr class="w-full flex flex-row space-x-2 py-4 text-black text-2xl ">
+                          <td id="q0" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">1</td>
+                          <td id="q0" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">2</td>
+                          <td id="q1" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">3</td>
+                          <td id="q2" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">4</td> 
+                          <td id="q3" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">5</td>
+                          <td id="q4" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">6</td>
+                          <tr>
+                           <tr class="w-full flex flex-row space-x-2 py-4 text-black text-2xl ">
+                          <td id="q5" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">7</td>
+                          <td id="q6" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">8</td>    
+                          <td id="q7" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">9</td>
+                          <td id="q8" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">10</td>
+                          <td id="q9" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">11</td>
+                          <td id="q10" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">12</td>
+                          <tr>
+                          <tr class="w-full flex flex-row space-x-2 py-4 text-black text-2xl ">
+                           <td id="q11" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">13</td>
+                          <td id="q12" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">14</td>    
+                          <td id="q13" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">15</td>
+                          <td id="q14" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">16</td>
+                          <td id="q15" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">17</td>
+                          <td id="q16" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">18</td>
+                          <tr>
+                           <tr class="w-full flex flex-row space-x-2 py-4 text-black text-2xl ">
+                           <td id="q17" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">19</td>
+                          <td id="q18" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">20</td>
+                          <td id="q19" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">21</td>
+                          <td id="q20" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">22</td>
+                          <td id="q21" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">23</td>
+                          <td id="q22" class="td-q w-16 h-16  bg-slate-200 flex items-center justify-center border-4 border-white">24</td> 
+                        <tr>
+                      </table>
+                    </div>
+                   <div class="bot h-36 bg-red-300 flex  justify-center items-center">
+                      <form action="/result" method="post">
+                      <button type="submit" id="submit" class=" inline-block w-40 h-12 px-7 py-2.5 bg-red-500 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg  focus:bg-red-800">Submit</button> 
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="../javaScript/algebra.js"></script>
+      </body>
+      </html>
